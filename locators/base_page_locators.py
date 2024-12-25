@@ -1,0 +1,22 @@
+from selenium.webdriver.common.by import By
+
+class BasePageLocators:
+    button_order = [By.CLASS_NAME, 'Button_Button__ra12g']
+    dropdown_list_1 = [By.XPATH, ".//div[@id='accordion__heading-0']"]
+    info_in_dropdown_list_1 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-0']/p"]
+    dropdown_list_2 = [By.ID, 'accordion__heading-1']
+    info_in_dropdown_list_2 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-1']/p"]
+    dropdown_list_3 = [By.ID, 'accordion__heading-2']
+    info_in_dropdown_list_3 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-2']/p"]
+    dropdown_list_4 = [By.ID, 'accordion__heading-3']
+    info_in_dropdown_list_4 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-3']/p"]
+    dropdown_list_5 = [By.ID, 'accordion__heading-4']
+    info_in_dropdown_list_5 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-4']/p"]
+    dropdown_list_6 = [By.ID, 'accordion__heading-5']
+    info_in_dropdown_list_6 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-5']/p"]
+    dropdown_list_7 = [By.ID, 'accordion__heading-6']
+    info_in_dropdown_list_7 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-6']/p"]
+    dropdown_list_8 = [By.ID, 'accordion__heading-7']
+    info_in_dropdown_list_8 = [By.XPATH, ".//div[@class='accordion__item']/div[@id='accordion__panel-7']/p"]
+    logo_scooter = [By.XPATH, ".//img[@alt='Scooter']"]
+    logo_yandex = [By.XPATH, ".//img[@alt='Yandex']"]
