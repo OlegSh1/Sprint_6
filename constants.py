@@ -1,6 +1,7 @@
 class Constants:
 
     url_base_page = 'https://qa-scooter.praktikum-services.ru/'
+    url_order_bage = 'https://qa-scooter.praktikum-services.ru/order'
     url_dzen = 'https://dzen.ru/?yredirect=true'
 
     dropdown_list_1 = 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.'
@@ -11,3 +12,5 @@ class Constants:
     dropdown_list_6 = 'Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.'
     dropdown_list_7 = 'Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.'
     dropdown_list_8 = 'Да, обязательно. Всем самокатов! И Москве, и Московской области.'
+
+    info_dropdown_list = [["0", dropdown_list_1], ["1", dropdown_list_2], ["2", dropdown_list_3], ["3", dropdown_list_4], ["4", dropdown_list_5], ["5", dropdown_list_6], ["6", dropdown_list_7], ["7", dropdown_list_8]]

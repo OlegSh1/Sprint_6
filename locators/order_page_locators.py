@@ -17,3 +17,4 @@ class OrderPageLocators:
     button_order = [By.XPATH, ".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']"]
 
     order_button_yes = [By.XPATH, ".//button[text()='Да']"]
+    button_cookie = [By.XPATH, ".//button[@class='App_CookieButton__3cvqF']"]
