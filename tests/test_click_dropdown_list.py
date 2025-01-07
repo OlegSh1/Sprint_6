@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
 from constants import Constants
-from locators.home_page_locators import BasePageLocators
 from pages.home_page import HomePage
 
 

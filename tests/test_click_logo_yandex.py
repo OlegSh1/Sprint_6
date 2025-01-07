@@ -2,13 +2,7 @@ import time
 import allure
 import pytest
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
-import data.data
 from constants import Constants
-from locators.home_page_locators import BasePageLocators
-from locators.order_page_locators import OrderPageLocators
 from pages.home_page import HomePage
 
 

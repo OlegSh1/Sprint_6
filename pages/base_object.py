@@ -14,6 +14,9 @@ class BaseObject:
     def go_to_site(self):
         self.driver.get(self.url)
 
+    def click_button(self, locators):
+        self.find_element(locators).click()
+
     def find_element(self, locator, time=3):
         try:
             WebDriverWait(self.driver, time).until(

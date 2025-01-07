@@ -1,14 +1,6 @@
-import allure
-import pytest
 from selenium import webdriver
-
-import data.data
 from constants import Constants
-from locators.home_page_locators import BasePageLocators
-from locators.order_page_locators import OrderPageLocators
 from pages.home_page import HomePage
-from pages.order_page import OrderPage
-from data.data import DataOrder
 
 
 class TestClickLogoScooter:

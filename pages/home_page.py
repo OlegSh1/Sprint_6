@@ -5,13 +5,11 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from locators.home_page_locators import BasePageLocators
+from locators.order_page_locators import OrderPageLocators
 from pages.base_object import BaseObject
 
 
 class HomePage(BaseObject):
-
-    def click_button(self, locators):
-        self.find_element(locators).click()
 
     def find_dropdown_list(self, element):
         return WebDriverWait(self.driver, 3).until(expected_conditions.presence_of_element_located((By.XPATH, f".//div[@id='accordion__heading-{element}']")))
@@ -38,3 +36,6 @@ class HomePage(BaseObject):
 
     def get_current_url(self):
         return self.driver.current_url
+
+    def click_button_order(self):
+        self.click_button(BasePageLocators.button_order)

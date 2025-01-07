@@ -1,7 +1,7 @@
 class Constants:
 
     url_base_page = 'https://qa-scooter.praktikum-services.ru/'
-    url_order_bage = 'https://qa-scooter.praktikum-services.ru/order'
+    url_order_bage = f'{url_base_page}order'
     url_dzen = 'https://dzen.ru/?yredirect=true'
 
     dropdown_list_1 = 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.'

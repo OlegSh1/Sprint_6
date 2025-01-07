@@ -5,7 +5,6 @@ from selenium import webdriver
 import data.data
 from constants import Constants
 from locators.home_page_locators import BasePageLocators
-from locators.order_page_locators import OrderPageLocators
 from pages.home_page import HomePage
 from pages.order_page import OrderPage
 
@@ -23,12 +22,12 @@ class TestCreatOrder:
         home_page.go_to_site()
         orderPage = OrderPage(self.driver, Constants.url_order_bage)
 
-        home_page.click_button(BasePageLocators.button_order)
+        home_page.click_button_order()
 
         orderPage.set_contact_information(name, last_name, address, metro, phone)
         orderPage.set_info_order(delivery_date ,date_rent_period, color, comment)
 
-        assert orderPage.find_element(OrderPageLocators.order_button_yes).text == 'Да'
+        assert orderPage.get_order_button_text() == 'Да'
 
     @classmethod
     def teardown_class(cls):

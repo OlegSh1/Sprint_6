@@ -48,7 +48,10 @@ class OrderPage(BaseObject):
         self.find_element(OrderPageLocators.input_comment).send_keys(comment)
 
     def button_click_order(self):
-        self.find_element(OrderPageLocators.button_order).click()
+        self.click_button(OrderPageLocators.button_order)
+
+    def get_order_button_text(self):
+        return self.find_element(OrderPageLocators.order_button_yes).text
 
     @allure.step('Вводим контактные данные в форму заказа')
     def set_contact_information(self, name, last_name, address, metro, phone):
